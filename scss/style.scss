@@ -1,0 +1,380 @@
+@import 'mixins';
+@import 'variables';
+
+body{
+    margin: 0;
+    padding: 0;
+    margin-right: 0;
+    
+    
+    
+    
+    
+}
+
+.upper-info{
+    width: 100%;
+    height:100px;
+    padding-top: 15px;
+    padding-left: 30px;
+    
+    .container{
+        
+        position: relative;
+        max-width: 1300px;
+        margin: auto;
+    }
+
+    img{
+        height:70px;
+        width:auto;
+        float: left;
+        max-width:100%;
+        vertical-align: middle;
+    }
+
+    
+}
+
+.top-info-box{
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    li{
+        display: inline-block;
+        position: relative;
+        padding-right: 50px;
+    }
+
+    i{
+        position:absolute;
+        left: 0;
+        font-size: 30px;
+        color: $icon-color;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right:15px;
+        margin: auto;
+    }
+
+    .fa{
+        display: inline-block;
+        
+    }
+
+    .fa-map-marker::before{
+        content: "\f041";
+    }
+    .fa-phone::before{
+        content: '\f095';
+    }
+    .fa-envelope::before{
+        content: '\f0e0';
+    }
+    span{
+        display: block;
+        padding-left: 2px;
+        font-size: 14px;
+        margin:auto;
+        
+    }
+    p{
+        padding-left: 32px;
+        font-size: 14px;
+        margin: auto;
+    }
+    
+    
+}
+
+.navbar{
+    width: 95%;
+    margin: auto;
+    background-color: $navbar-color;
+    height: 50px;
+    .navbar-nav li{
+        padding-right: 20px; 
+    }
+    
+    .nav-item{
+        padding-right: 30px;
+
+        .nav-link{
+            color:whitesmoke;
+            font-size: 1.1em  !important;
+        }
+
+    }
+}
+
+.carousel{
+    width:100%;
+    height:450px;
+    .carousel-item{
+
+        img{
+            height:500px;
+            width: 95%;;
+            margin: auto;
+            display: block;
+        }
+    }
+
+    .carousel-caption{
+        @include caption;
+
+        button{
+            transform: translate(-550px,-280px);
+            border-radius: 6px;
+        }
+    }
+}
+
+.description{
+    h1{
+        font-weight: 600;
+        text-align: justify;
+        line-height:2rem;
+        transform: translateX(-80px);
+        
+    }
+    p{
+        text-align: justify;
+        transform: translateX(80px);
+        
+    }
+    
+    
+}
+.cards
+{
+    max-width: 100%;
+   background-color: transparent;
+
+}
+.services
+{
+    text-align: center;
+    font-weight: 500;
+    transform: translateX(550px);
+}
+
+.jumbotron{
+    width: 100%;
+    height: 500px;
+    margin: auto;
+
+    a{
+        color:black;
+        text-decoration: none;
+    }
+}
+.testimonial-area{
+    padding: 180px 0;
+    position: relative;
+   background-color: #262626;
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+  padding-top: 30px;
+  height: 500px;
+
+
+    .testimonial-area::before{
+         position: absolute;
+         content: '';
+         background:rgba(0,0,0,0.9) ;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+
+}
+
+    .testimonial-heading{
+        color: white;
+        font-weight: 800;
+        padding-bottom: 40px;
+    }
+    .single-testimonial{
+        color:#fff;
+        padding-left: 75px;
+        position: relative;
+        margin: 0 15px 15px;
+
+    }
+    .img-area{
+       border-radius: 50%;
+       height: 100px;
+       margin-top: -75px;
+       position: absolute;
+       top:50%;
+       width: 100px;
+       transform: translateY(40px);
+
+    }
+    .testi-text{
+        
+        
+        padding: 40px 20px 40px 100px;
+
+        p{
+            text-align: justify;
+            
+        }
+        h4{
+            font-size: 30px;
+            margin-bottom: 30px;
+            font-weight: 400;
+            
+        }
+
+
+    }
+    .img-area>img{
+        background: linear-gradient(to bottom, darkcyan,white);
+        border-radius: 50%;
+        padding: 5px;
+    }
+    .single-testimonial:hover .testi-text{
+      background: whitesmoke;
+      transition: 0.9s; 
+      color: black; 
+    }
+}
+
+.footer-top{
+    
+    ul li{
+        list-style: none;
+        text-align: justify;
+    }
+    h3{
+        text-align: justify;
+        padding-left: 36px;
+    }
+
+    a{
+        text-decoration: none;
+        color:black;
+
+       
+        
+    }
+    a:hover{
+        color:blue;
+    }
+
+    p{
+        text-align: justify;
+    }
+
+    .contact{
+       
+        h6{
+            text-align: justify;
+        }
+    }
+
+    ol{
+        li{
+            list-style: none;
+            float: left;
+            display: inline;
+
+            a{ 
+                
+               font-size: 25px;
+                padding-right: 5px;
+                padding-left: 5px;
+                color: $navbar-color;
+            
+            }
+
+            
+        }
+    }
+
+}
+
+.footer-bottom{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    display: block;
+
+    p{
+        color: white;
+        transform: translateY(10px);
+    }
+}
+
+.gallery{
+    padding-top: 50px;
+    
+    img{
+    width: 360px;
+	height: 300px;
+	padding-bottom: 25px;
+	padding-left: 12px;
+	border-radius: 5px;
+    }
+
+    img:hover{
+        transform: scale(1.2,1.2);
+        transition: .3s transform;
+    }
+}
+
+.map-section{
+    iframe{
+        width: 1320px;
+        height: 450px;
+        margin:0 auto;
+    }
+}
+.contact{
+    h1{
+        transform: translateX(-450px);
+       
+    }
+    
+
+}
+.contact-info{
+    width: 300px;
+    height:450px;
+    transform: translate(840px,-320px);
+    margin :auto;
+    position: absolute;
+
+    ul{
+        li{
+            list-style: none;
+            line-height: .8rem;
+            i{
+                color: $navbar-color;
+            }
+        }
+    }
+}
+
+//media queries
+
+@media (max-width:768px){
+    .carousel-caption{
+        font-size: 160%;
+        top: 45%;
+        h1{
+            font-size: 350%;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 10px #000;
+        }
+        button{
+            font-size: 95%;
+            padding: 8px 14px;
+        }
+    }
+}
+

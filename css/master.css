@@ -1,0 +1,20 @@
+
+
+/* FONTS */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300,900,700italic,400italic,500,500italic,300italic);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+
+
+/* PLUGIN CSS */
+@import url('../assets/loader/css/loader.css');
+@import url('../assets/owl-carousel/owl.carousel.css');
+@import url('../assets/owl-carousel/owl.theme.css');
+@import url('animate.css');
+@import url('hover.css');
+@import url('../assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css') ;
+@import url('../assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css') ;
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
